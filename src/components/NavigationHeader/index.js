@@ -11,4 +11,5 @@ const NavigationHeader = ({ activeTab }) => (
       <Navigation activeTab={activeTab} />
   </section>
 )
+
 export default NavigationHeader

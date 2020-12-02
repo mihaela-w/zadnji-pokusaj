@@ -11,4 +11,5 @@ const NavigationBar = ({activeTab}) => (
     )}
   </nav>
 )
+
 export default NavigationBar
