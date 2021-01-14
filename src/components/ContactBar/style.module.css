@@ -13,3 +13,7 @@
       color: #ccc;
       font-family: 'Helvetica';
   }
+
+  button{
+      background-color: transparent;
+  }

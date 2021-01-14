@@ -42,6 +42,7 @@ const Login = () => {
     if (key.key === "Enter")
       return submit()
   }}>
+
     <section className={styles.container}>
       <section className={styles.field}>
         <label htmlFor="username">
@@ -49,17 +50,20 @@ const Login = () => {
         </label>
         <input name="username" onChange={e => setUserName(e.target.value)}/>
       </section>
+
       <section className={styles.field}>
         <label htmlFor="password">
           Password
         </label>
         <input name="password" type="password" onChange={e => setPassword(e.target.value)} />
       </section>
+      
       <p className={`${styles[error !== "Success" ? 'error' : 'success']} ${error ? styles.show : ''}`}>{error}</p>
       <button className={styles.loginButton} onClick={() => submit()}>
         {loading ? 'Loading...' : 'Login'}
       </button>
     </section>
+
   </main>
 )}
  
